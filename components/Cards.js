@@ -77,7 +77,7 @@ function cardMaker(obj){
     author.classList.add('author')
 
     const imgContainer = document.createElement('div')
-    imgContainer.classList.add('imgContainer')
+    imgContainer.classList.add('img-container')
 
     const img = document.createElement('img')
     img.src = obj.authorPhoto
@@ -103,4 +103,4 @@ function cardMaker(obj){
 
 }
 
-cardMaker()
+
