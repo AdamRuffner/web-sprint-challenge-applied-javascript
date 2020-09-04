@@ -29,28 +29,21 @@ axios.get('https://lambda-times-api.herokuapp.com/articles')
         response.data.articles.javascript.forEach( item => {
             cardMaker(item)
         })
-    })
-    .then(response => {
         response.data.articles.bootstrap.forEach( item => {
             cardMaker(item)
-        })
-    })
-    .then(response => {
+                })
         response.data.articles.technology.forEach( item => {
             cardMaker(item)
         })
-    })
-    .then(response => {
         response.data.articles.jquery.forEach( item => {
             cardMaker(item)
         })
-    })
-    .then(response => {
         response.data.articles.node.forEach( item => {
             cardMaker(item)
         })
     })
-    .catch(err => {
+   
+     .catch(err => {
         console.log(`Error: ${err}`)
     })
 
